@@ -1,0 +1,565 @@
+/*logo start */
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    height: 50px;
+    padding: 0 100px;
+    text-align: center;
+    background-color: rgb(199, 189, 189);
+    border-bottom: 1px solid rgb(36, 35, 35);
+    z-index: 1000;
+    
+}
+.nav{
+    height: 50px;
+    background: rgb(199, 189, 189);
+    padding: 0 100px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 1000!important;
+   
+}
+.nav a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-style: unset;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+.container .nav a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background: #BB2227;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s linear;
+}
+.container .nav a:hover::before{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+.nav a:hover{
+    color: #BB2227;
+}
+/* nav end */
+
+/* bollom start */
+.bollom{
+    width: 100%;
+    height: 75vh;
+    background-color: #A6272F;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+   
+}
+/* bollom */
+.bollon{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 5px;
+    
+    
+}
+.bollon:hover{
+    transform: translateY(-50px); 
+}
+/* bollom end */
+
+/* template start */
+.template{
+    height: 30vh;
+    padding: 50px 100px;
+    text-align: center;
+    background-color: #848484;
+}
+.template p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: #fff;
+}
+/* template end */
+/* choice start */
+.choice{
+    background: url(../img/snowballbg.jpg) center/ cover no-repeat fixed;
+    height: 95vh;
+    object-fit: cover;
+    width: 100%;
+}
+.choice .left{
+    width: 450px;
+    height: 330px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.leftbt{
+    width: 450px;
+    position: relative;
+    top: 90px;
+    left: 10%;
+    
+}
+.choice .img img{
+    width: 450px;
+    border-radius: 10px;
+   
+}
+
+.choice .text{
+    text-align: center;
+}
+.choice .text span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #fff;
+    
+}
+.choice .text p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+/* choice end */
+/* choice1 start */
+.choice1{
+    background: url(../img/footbg.jpg) center/ cover no-repeat fixed;
+    height: 90vh;
+    object-fit: cover;
+    width: 100%;
+}
+.choice1 .right .img img{
+    width: 450px;
+    border-radius: 10px;
+}
+.choice1 .right{
+    width: 450px;
+    height: 330px;
+    position: relative;
+    top: 10%;
+    left: 55%;
+}
+.rightbt{
+    width: 450px;
+    position: relative;
+    top: 90px;
+    left: 55%;
+
+}
+.choice1 .text{
+    text-align: center;
+}
+.choice1 .text span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #fff;
+    
+}
+.choice1 .text p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+/* choice1 end */
+/* choice2 */
+.choice2{
+    background: url(../img/present\ bg.jpg) center/ cover no-repeat fixed;
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+.choice2 .left{
+    width: 450px;
+    height: 330px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.leftbt{
+    width: 450px;
+    position: relative;
+    top: 90px;
+    left: 10%;
+    
+}
+.choice2 .img img{
+    width: 450px;
+    border-radius: 10px;
+   
+}
+.choice2 .text{
+    text-align: center;
+}
+.choice2 .text span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #fff;  
+}
+.choice2 .text p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+/*choice3  */
+.choice3{
+    background: url(../img/hatbg.jpg) center/ cover no-repeat fixed;
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+.choice3 .right .img img{
+    width: 450px;
+    border-radius: 10px;
+}
+.choice3 .right{
+    width: 450px;
+    height: 330px;
+    position: relative;
+    top: 10%;
+    left: 55%;
+}
+.rightbt{
+    width: 450px;
+    position: relative;
+    top: 90px;
+    left: 55%;
+
+}
+.choice3 .text{
+    text-align: center;
+}
+.choice3 .text span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #fff;
+}
+.choice3 .text p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+/*choice4  */
+.choice4{
+    background: url(../img/cupbg.jpg) center/ cover no-repeat fixed;
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+.choice4 .left{
+    width: 450px;
+    height: 330px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.choice4 .img img{
+    width: 450px;
+    border-radius: 10px;
+   
+}
+.choice4 .text{
+    text-align: center;
+}
+.choice4 .text span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #fff;  
+}
+.choice4 .text p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.leftbt{
+    width: 450px;
+    position: relative;
+    top: 90px;
+    left: 10%;
+    
+}
+.img{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+    
+}
+.img::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    top: -25px;
+    left: -25px;
+    background: gray;
+    z-index: -1000;
+    border-radius: 10px;
+   
+}
+/* register start */
+.videobackground{
+    position: relative;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.vc{
+    position: absolute;
+    bottom: -630%;
+    right: 0;
+    left: 0;
+   
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 100px;
+    margin-top: 100px;
+    
+}
+.contact .left div{
+    margin: 20px 0px;
+
+}
+.left,.right{
+    width: 500px; 
+   
+}
+.contact .left div span{
+    color: indianred;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact .left div p{
+    font-size: 18px;
+}
+.contact .right input{
+    width: 450px;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+    background-color:transparent;
+    border: 2px solid indianred;
+    border-radius: 20px;
+   color: #000;
+    
+   
+}
+.contact .right textarea{
+    width: 450px;
+    height: 100px;
+    margin-top: 20px;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+    border: 2px solid indianred;
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+.contact .right a{
+    padding: 10px 20px;
+    color: #000;
+    background-color: indianred;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.vc .happy{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+.left p{
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 20px!important;
+
+}
+/* register end */
+@media(max-width:1300px){
+    .vc{
+        position: absolute;
+        bottom: -630%;
+        right: 0;
+        left: 0;
+    }
+    .videobackground{
+        height: 130vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .contact{
+        text-align: center;
+    }
+    
+}
+@media(max-width: 1200px){
+    .nav{
+        padding: 0 3px;
+    }
+    .template{
+        height: 30vh;
+        padding: 50px 30px;  
+    }
+    .template img {
+        width: 400px!important;
+    }
+    .template p{  
+        font-size: 20px;  
+    }
+    .contact{
+        flex-direction: column;
+        padding: 0 50px;
+        text-align: center;
+    }
+    .vc{
+        position: absolute;
+        bottom: -630%;
+        right: 0;
+        left: 0;  
+    }
+     
+}
+@media(max-width: 1000px){
+    .nav a{
+        margin: 0 3px;
+        font-size: 11px;
+    }
+    .img::before{
+        display: none;
+    }
+    .img img{
+        width: 100%;
+    }
+    .choice .left{
+        
+        left: 10%;
+    }
+    .choice2 .left{
+        
+        left: 10%;
+    }
+    .choice4 .left{  
+        left: 10%;
+    }
+    .leftbt{
+       
+        left: 10%;
+    }
+    .choice1 .right{
+      
+        left: 10%;
+    }
+    .choice3 .right{
+      
+        left: 10%;
+    }
+    .rightbt{
+        left: 10%;
+    
+    }
+    
+    .vc{
+       
+        bottom: -960%;
+        
+       
+    }
+    .contact .right input{
+        width: 350px;
+          
+    }
+    .contact .right textarea{
+        width: 350px;
+    }
+    .videobackground{
+       
+        height: 130vh;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    .contact{
+        text-align: center;
+    }
+    .vc .happy{
+        
+        font-size: 30px;
+    }
+    .left,.right{
+        width: 100%; 
+       
+    }
+    .bollom{
+       
+        height: 400vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bollon{
+       margin: 10px 0;
+       width: 200px;
+        
+    }
+    
+    
+}
+@media(max-width:600px){
+    .choice .left{
+        left: 5%;
+    }
+    .choice2 .left{
+        left: 5%;
+    }
+    .choice4 .left{
+        left: 5%;
+    }
+    .leftbt{
+        left: 5%;
+    }
+    .choice1 .right{
+        left: 5%;
+    }
+    .choice3 .right{
+        left: 5%;
+    }
+    .rightbt{
+        left: 5%;
+    }
+    .vc{
+       
+        bottom: -960%;
+        
+       
+    }
+    .videobackground{
+       
+        height: 130vh;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+
+}
+
